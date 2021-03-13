@@ -1,0 +1,60 @@
+<!-- Base application theme. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+    </style>
+
+    <style name="AppTheme.SplashTheme">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar2">
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>-->
+    </style>
+
+    <!--Style for toolbar text size-->
+    <style name="Toolbar.TitleText" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--tab layout text setting-->
+    <style name="tabLayoutTextStyle">
+        <item name="android:fontFamily">@font/mabry_regular_pro</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+</resources>

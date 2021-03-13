@@ -7,8 +7,8 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.finest.quotes"
-        minSdkVersion 16
+        applicationId "com.dailyinspirationalquotes.lifequotes"
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -38,13 +38,27 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // Retrofit & OkHttp
-    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //retrofit library
     implementation 'com.google.code.gson:gson:2.8.6'
-//    implementation 'ja.burhanrashid52:photoeditor:0.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.6.0'
+    //implementation 'ja.burhanrashid52:photoeditor:0.2.1'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
 
     //multiple screen size support
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
+
+    //Expandable floating action button
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation 'petrov.kristiyan:colorpicker-library:1.1.10'
+
+    //Circular progress bar
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
 }

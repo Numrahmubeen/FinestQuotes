@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quote_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/quote_screenShot_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/quote_iv"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:src="@drawable/ic_quote"
+            app:tint="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/quote_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:scrollbars="vertical"
+            android:text="Quotes will display here"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/quote_author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="author Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/quote_pb"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/quote_fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:menu_fab_size="mini"
+        fab:menu_backgroundColor="#CCA1A1A1"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        fab:menu_colorPressed="@color/colorPrimaryDark"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_position="left"
+        fab:menu_labels_singleLine="true"
+        tools:ignore="RtlSymmetry">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/quote_fab_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_whatsapp"
+            app:fab_colorNormal="@color/colorWhite"
+            app:fab_colorPressed="@color/colorWhite"
+            app:fab_label="Share on whatsapp"
+            app:fab_size="mini"
+            fab:menu_colorRipple="#99FFFFFF" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/quote_fab_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_whatsapp"
+            android:tint="@color/colorWhite"
+            app:fab_colorNormal="@color/colorWhite"
+            app:fab_colorPressed="@color/colorWhite"
+            app:fab_label="Save on mobile"
+            app:fab_size="mini"
+            fab:menu_colorRipple="#99FFFFFF" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/quote_fab_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vec_copy"
+            app:fab_colorNormal="@color/colorWhite"
+            app:fab_colorPressed="@color/colorWhite"
+            app:fab_label="Copy Quote"
+            app:fab_size="mini"
+            fab:menu_colorRipple="#99FFFFFF" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/quote_fab_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vec_copy"
+            app:fab_colorNormal="@color/colorWhite"
+            app:fab_colorPressed="@color/colorWhite"
+            app:fab_label="Share"
+            app:fab_size="mini"
+            fab:menu_colorRipple="#99FFFFFF" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
